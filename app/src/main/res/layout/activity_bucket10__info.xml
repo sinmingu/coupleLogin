@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".self50_Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E9E6F3"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/de_no_cancle"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="버킷리스트10"
+            android:layout_weight="0.8"
+            android:textColor="#C8A585"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae_bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="14dp"
+            android:id="@+id/de_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_question_circle"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 1 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser1"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 2 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser2"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 3 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser3"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 4 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser4"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 5 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser5"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 6 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser6"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 7 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser7"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 8 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser8"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 9 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser9"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" 10 "
+                    android:textColor="#757575"
+                    android:textStyle="bold"
+
+                    android:textSize="14dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_write_circle"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/self50_anwser10"
+                    android:textSize="14dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

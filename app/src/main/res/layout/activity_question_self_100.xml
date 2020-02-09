@@ -1,0 +1,3642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Question_self_100">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E9E6F3"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/de_no_cancle"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="100문답"
+            android:layout_weight="0.8"
+            android:textColor="#C8A585"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae_bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="12dp"
+            android:id="@+id/de_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_weight="0.1"
+            android:id="@+id/back_page"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="페이지"
+                android:id="@+id/text_page"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/next_page"
+            android:layout_weight="0.1"
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TabHost
+            android:id="@+id/reg_tab_host"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+
+                android:id="@android:id/tabs"
+                android:visibility="gone"
+                android:layout_gravity="top"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" />
+
+            <FrameLayout
+
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="1. 나의 혈액형은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_1"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="2. 나는 무슨 띠?(쥐,소,토끼 등)"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_2"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="3. 내 신발사이즈는?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_3"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="4. 내가 좋아하는 연예인은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_4"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="5. 내가 못 먹는 음식은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_5"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reg_tab_view2"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="6. 내가 좋아하는 음식은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_6"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="7. 내 이상형은? "
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_7"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="8. 만약 내가 싫어하는 동물로 변한다면? "
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_8"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="9. 내가 돈을 빌려준다고 한다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_9"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="10. 내가 좋아하는 브랜드는?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_10"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view3"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="11. 내가 좋아하는 과일은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_11"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="12. 내가 못 먹는 과일은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_12"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="13. 만약 우리 둘이 몸이 바뀐다면 하고 싶은게 뭐야?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_13"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="14. 생일에 받고싶은게 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_14"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="15. 기억에 남는 추억이 있다면 언제야?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_15"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view4"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="16. 나의 어디가 좋아?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    
+                                    android:textColor="#757575"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_16"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="17. 가고싶은 장소가 있다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_17"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="18. 내일 지구가 멸망한다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    
+                                    android:textColor="#757575"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_18"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="19. 무인도에 나랑 같이 갇힌다면 챙기고 싶은 물건은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_19"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="20. 지금 나한테 가장 하고 싶은 말은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_20"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view5"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="21. 내가 갑자기 연락이 안된다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_21"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="22. 나랑 가장 닮은 동물은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_22"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="23. 내 이름으로 3행시"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_23"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="24. 커플 아이템을 한다면 가장 하고 싶은 것은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_24"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="25. 만약 우리가 싸우게 된다면 어떻게 할 거야?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_25"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view6"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="26. 나랑 가고 싶은 해외여행지는?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_26"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="27. 처음 고백했을 때(or 받았을때) 어떤 기분이였어?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_27"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="28. 내가 부르는 애칭 중에 뭐가 제일 좋아?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_28"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="29. 꿈에 내가 나온다면 뭘 하고 싶어?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_29"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="30. 돈을 빌려달라고 한다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_30"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view7"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="31. 만약 우리한테 권태기가 온다면 어떻게 할 거야?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_31"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="32. 내가 만약 숨기고 있는 비밀을 들킨다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_32"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="33. 내가 제일 생각날때가 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_33"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="34. 내 첫인상은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_34"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="35. 다른 사람이 나를 안 좋게 말하는걸 듣는다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_35"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view8"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="36. 타임머신이 있다면 언제로 돌아가고 싶어?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_36"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="37. 내가 남사친(or여사친)과 여행을 간다고 한다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_37"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="38. 스트레스 해소법이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_38"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="39. 내가 술에 취한다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_39"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="40. 가장 좋아하는 애교는?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_40"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view9"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="41. 함께하고 싶은 취미 생활이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_41"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="42. 나를 만약 안만났다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_42"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="43. 안만나는 동안에는 무엇을 해?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_43"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="44. 다시 가고싶은 데이트 장소가 있다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_44"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="45. 우리가 닮은 점이 있다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_45"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view10"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="46. 내가 좋아하는 영화 장르는?(로맨드, 호러, 코미디 등)"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_46"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="47. 말 못 했던 서운한 순간은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_47"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="48. 만약 다음날 갑자기 내가 너를 기억을 못 한다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_48"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="49. 지우고 싶은 창피한 순간은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_49"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="50. 생리현상(방구, 트름 등) 중 어디까지 오픈할 수 있어?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_50"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view11"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="51. 보통 일어나는 시간은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_51"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="52. 보통 잠드는 시간은?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_52"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="53. 내가 가장 좋아하는 스포츠는?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_53"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="54. 내가 좋아하는 계절은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_54"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="55. 나의 종교는?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_55"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view12"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="56. 제일 마음에 드는 내 신체 부위는?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_56"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="57. 고백했을때(or고백받았을때) 기분은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_57"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="58. 성격중 가장 장점이라고 생각하는 부분은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_58"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="59. 만나면서 가장 마음 아팠던 순간은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_59"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="60. 다시 태어난다면 어떤걸로 태어나고싶어?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_60"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view13"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="61. 내가 만약 많이 아프다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    
+                                    android:textColor="#757575"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_61"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="62. 가장 자신있는 요리는?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_62"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="63. 나를 알게되면서 의외였던 모습은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_63"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="64. 사귀기 시작하면서 더 좋아진 부분은?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_64"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="65. 우리의 5년후 모습을 상상한다면?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_65"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view14"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="66. 만약 결혼을 하게된다면 우리의 모습은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_66"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="67. 우리가 처음만난 장소는?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_67"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="68. 내가 바꿔주었으면 하는 행동이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_68"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="69. 같이 하고 싶은 게임이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_69"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="70. 내가 불러줬으면 하는 노래가 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_70"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view15"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                android:layout_width="match_parent"
+                                android:text="71. 내가 만약 장기간 해외에 있는다면?"
+                                android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                android:layout_marginBottom="6dp"
+                                android:layout_height="wrap_content" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_71"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="72. 기념일로 정하고 싶은 순간이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_72"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="73. 내가 로또에 당첨된다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_73"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="74. 가장 부끄러웠던 순간은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_74"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="75. 우리에게 주어진시간이 24시간이라면 무엇을 하고싶어?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_75"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view16"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="76. 내가 다른 모습으로 나타난다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_76"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="77. 다른이성이 번호를 물어본다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_77"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="78. 지금까지 말 못하는 거짓말이 있다면 물어볼꺼야?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_78"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="79. 내가 만약 재벌3세라면?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_79"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="80. 내가 만약 대머리가 된다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_80"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view17"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="81. 올해 가보고 싶은 곳은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_81"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="82. 데이트 비용으로 만원밖에 없다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_82"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="83. 좋아하는 헤어스타일은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_83"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="84. 고쳤으면 하는 말투는?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_84"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="85. 나랑 닮은 만화 캐릭터가 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_85"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view18"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="86. 나의 가장 귀여웠던 모습은?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_86"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="87. 좋아하는 데이트 장소는?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_87"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="88. 내가 화가나면 어떻게 풀어줄꺼야?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_88"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="89. 하고싶은 이색데이트는?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_89"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="90. 나의 별자리는?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_90"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view19"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="91. 우리가 아이를 낳는다면 어떻게 키우고싶어?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    
+                                    android:textColor="#757575"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_91"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="92. 같이 하고싶은 운동은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_92"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="93. 내가 만약에 살이 엄청 찐다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_93"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="94. 나에게 가장 고마웠던 순간은 언제야?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_94"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="95. 내가 잠버릇이 있다면?"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_95"
+                                    android:background="@drawable/btn_question_circle"
+                                    
+                                    android:textColor="#757575"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view20"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="96. 나를 만나면서 닮아진 부분이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_96"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="97. 내가 만약 생일을 못 챙겨줬다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_97"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="98. 어릴 적 꿈이 있다면 뭐가 되고싶었어?"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:textSize="14dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_98"
+                                    
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="99. 나로 인해 고친 습관이 있다면?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    
+                                    android:textColor="#757575"
+                                    android:id="@+id/edit_you50_99"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:text="100. 연애하면서 꼭 지켜줬으면 하는 부분은?"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#757575"
+                                    android:layout_marginBottom="6dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_100"
+                                    android:textColor="#757575"
+                                    android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </TabHost>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:fontFamily="@font/binggrae_bold"
+                android:gravity="center"
+                android:text="임시저장"
+                android:textColor="#ffffff"
+                android:id="@+id/btn_save"
+                android:textSize="12dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="전송하기"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:fontFamily="@font/binggrae_bold"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/btn_send"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

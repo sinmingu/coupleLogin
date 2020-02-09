@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:background="#E9E6F3"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/main_img2"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="커플문답"
+            android:fontFamily="@font/binggrae_bold"
+            android:textSize="20dp"
+            android:textColor="#C8A585"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#E9E6F3"
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:background="#E9E6F3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5784293657699097/2759271305">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.2"
+                    android:weightSum="1"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:id="@+id/getFile"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/binggrae_bold"
+                        android:background="@drawable/btn_one"
+                        android:layout_height="90dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/center_img"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.3"
+                        android:fontFamily="@font/binggrae_bold"
+                        android:id="@+id/text_couple_id"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/btn_one"
+                        android:layout_height="90dp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/text_Login"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/text_Couple"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="문답 보내기"
+                android:id="@+id/question_file"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:stateListAnimator="@null"
+                android:fontFamily="@font/binggrae_bold"
+                android:background="@drawable/btn_pink_click"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="문답지 만들기"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/question_send"
+                android:stateListAnimator="@null"
+                android:fontFamily="@font/binggrae_bold"
+                android:background="@drawable/btn_pink_click"
+                android:layout_height="wrap_content" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="버킷리스트"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/question_list"
+                android:fontFamily="@font/binggrae_bold"
+                android:background="@drawable/btn_pink_click"
+                android:stateListAnimator="@null"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/couple_tele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_pink_click"
+                android:fontFamily="@font/binggrae_bold"
+                android:text="이구동성"
+                android:stateListAnimator="@null"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

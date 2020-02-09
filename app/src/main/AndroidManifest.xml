@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mglj.couplelogin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainlogo"
+        android:label="커플문답"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".setting"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5784293657699097~5852338508" />
+
+        <activity android:name=".self100_info" />
+        <activity android:name=".you100_send_info" />
+        <activity android:name=".you100_info" />
+        <activity android:name=".bucket30_Info" />
+        <activity android:name=".you50_sendInfo" />
+        <activity android:name=".CoupleGameResult" />
+        <activity android:name=".CoupleGameStart" />
+        <activity android:name=".CoupleGame" />
+        <activity android:name=".bucket10_Info" />
+        <activity android:name=".Question_bucket_30" />
+        <activity android:name=".Question_bucket_10" />
+        <activity android:name=".Question_bucket" />
+        <activity android:name=".you50_info" />
+        <activity android:name=".Question_you" />
+        <activity android:name=".Question_you_100" />
+        <activity android:name=".Question_you_50" />
+        <activity android:name=".self50_Info" />
+        <activity android:name=".GetContent" />
+        <activity android:name=".Question_self_100" />
+        <activity android:name=".Question_self_50" />
+        <activity android:name=".Question_self" />
+        <activity android:name=".detail_room" />
+        <activity android:name=".SerchActivity" />
+        <activity android:name=".MainLogin"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

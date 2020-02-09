@@ -1,0 +1,3539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Question_self_100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E9E6F3"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/de_no_cancle"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="100문답지"
+            android:layout_weight="0.8"
+            android:textColor="#C8A585"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae_bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="12dp"
+            android:id="@+id/de_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_weight="0.1"
+            android:id="@+id/back_page"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="페이지"
+                android:id="@+id/text_page"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/next_page"
+            android:layout_weight="0.1"
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TabHost
+            android:id="@+id/reg_tab_host"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+
+                android:id="@android:id/tabs"
+                android:visibility="gone"
+                android:layout_gravity="top"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" />
+
+            <FrameLayout
+
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="1. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_1"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="2. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_2"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="3. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_3"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="4. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_4"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="5. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_5"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reg_tab_view2"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="6. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_6"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="7. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_7"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="8. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_8"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="9. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_9"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="10. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_10"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view3"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="11. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_11"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="12. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_12"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="13. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_13"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="14. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_14"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="15. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_15"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view4"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="16. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_16"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="17. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_17"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="18. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_18"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="19. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_19"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="20. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_20"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view5"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="21. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_21"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="22. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_22"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="23. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_23"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="24. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_24"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="25. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_25"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view6"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="26. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_26"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="27. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_27"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="28. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_28"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="29. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_29"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="30. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_30"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view7"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="31. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_31"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="32. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_32"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="33. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_33"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="34. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_34"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="35. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_35"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view8"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="36. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_36"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="37. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_37"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="38. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_38"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="39. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_39"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="40. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_40"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view9"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="41. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_41"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="42. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_42"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="43. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_43"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="44. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_44"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="45. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_45"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view10"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="46. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_46"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="47. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_47"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="48. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_48"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="49. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_49"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="50. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_50"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view11"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="51. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_51"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="52. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_52"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="53. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_53"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="54. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_54"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="55. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_55"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view12"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="56. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_56"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="57. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_57"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="58. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_58"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="59. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_59"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="60. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_60"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view13"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="61. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_61"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="62. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_62"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="63. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_63"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="64. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_64"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="65. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_65"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view14"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="66. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_66"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="67. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_67"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="68. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_68"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="69. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_69"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="70. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_70"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view15"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="71. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_71"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="72. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_72"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="73. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_73"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="74. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_74"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="75. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_75"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view16"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="76. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_76"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="77. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_77"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="78. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_78"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="79. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_79"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="80. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_80"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view17"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="81. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_81"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="82. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_82"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="83. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_83"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="84. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_84"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="85. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_85"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view18"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="86. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_86"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="87. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_87"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="88. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_88"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="89. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_89"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="90. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_90"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view19"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="91. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_91"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="92. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_92"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="93. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_93"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="94. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_94"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="95. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_95"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view20"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="96. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_96"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="97. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_97"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="98. "
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_you50_98"
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:textColor="#757575"
+                                    
+                                    android:text="99. "
+                                    android:textSize="15dp"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_99"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="100. "
+                                    android:textSize="15dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="15dp"
+                                    android:id="@+id/edit_you50_100"
+                                    android:textColor="#757575"
+                                    
+                                   android:background="@drawable/btn_question_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </TabHost>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rect_circle_pink"
+                android:fontFamily="@font/binggrae_bold"
+                android:gravity="center"
+                android:text="임시저장"
+                android:textColor="#ffffff"
+                android:id="@+id/btn_save"
+                android:textSize="12dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="전송하기"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="@drawable/btn_rect_circle_pink"
+                android:fontFamily="@font/binggrae_bold"
+                android:id="@+id/btn_send"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".self50_Info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E9E6F3"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/de_no_cancle"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="50문답"
+            android:layout_weight="0.8"
+            android:textColor="#C8A585"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae_bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="14dp"
+            android:id="@+id/de_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="1. 나의 혈액형은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser1"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="2. 나는 무슨 띠?(쥐,소,토끼 등)"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser2"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="3. 내 신발사이즈는?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser3"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="4. 내가 좋아하는 연예인은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser4"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="5. 내가 못 먹는 음식은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser5"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="6. 내가 좋아하는 음식은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser6"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="7. 내 이상형은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser7"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="8. 만약 내가 싫어하는 동물로 변한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser8"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="9. 내가 돈을 빌려준다고 한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser9"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="10. 내가 좋아하는 브랜드는?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser10"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="11. 내가 좋아하는 과일은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser11"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="12. 내가 못 먹는 과일은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser12"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="13. 만약 우리 둘이 몸이 바뀐다면 하고 싶은게 뭐야?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser13"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="14. 생일에 받고싶은게 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser14"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="15. 기억에 남는 추억이 있다면 언제야?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser15"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="16. 나의 어디가 좋아?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser16"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="17. 가고싶은 장소가 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser17"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="18. 내일 지구가 멸망한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser18"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="19. 무인도에 나랑 같이 갇힌다면 챙기고 싶은 물건은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser19"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="20. 지금 나한테 가장 하고 싶은 말은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser20"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="21. 내가 갑자기 연락이 안된다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser21"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="22. 나랑 가장 닮은 동물은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser22"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="23. 내 이름으로 3행시"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser23"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="24. 커플 아이템은 한다면 가장 하고 싶은 것은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser24"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="25. 만약 우리가 싸우게 된다면 어떻게 할 거야?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser25"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="26. 나랑 가고 싶은 해외여행지는?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser26"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="27. 처음 고백했을 때(or 받았을때) 어떤 기분이였어?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser27"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="28. 내가 부르는 애칭 중에 뭐가 제일 좋아?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser28"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="29. 꿈에 내가 나온다면 뭘 하고 싶어?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser29"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="30. 돈을 빌려달라고 한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser30"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="31. 만약 우리한테 권태기가 온다면 어떻게 할 거야?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser31"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="32. 내가 만약 숨기고 있는 비밀을 들킨다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser32"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="33. 내가 제일 생각날때가 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser33"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="34. 내 첫인상은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser34"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="35. 다른 사람이 나를 안 좋게 말하는걸 듣는다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser35"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="36. 타임머신이 있다면 언제로 돌아가고 싶어?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser36"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="37. 내가 남사친(or여사친)과 여행을 간다고 한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser37"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="38. 스트레스 해소법이 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser38"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="39. 내가 술에 취한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser39"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="40. 가장 좋아하는 애교는?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser40"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="41. 함께하고 싶은 취미 생활이 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser41"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="42. 나를 만약 안만났다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser42"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="43. 안만나는 동안에는 무엇을 해?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser43"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="44. 다시 가고싶은 데이트 장소가 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser44"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="45. 우리가 닮은 점이 있다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser45"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="46. 내가 좋아하는 영화 장르는?(로맨드, 호러, 코미디 등)"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser46"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="47. 말 못 했던 서운한 순간은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser47"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="48. 만약 다음날 갑자기 내가 너를 기억을 못 한다면?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser48"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="49. 지우고 싶은 창피한 순간은?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser49"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="50. 생리현상(방구, 트름 등) 중 어디까지 오픈할 수 있어?"
+                android:textColor="#757575"
+                android:textSize="14dp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_question_circle"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/self50_anwser50"
+                android:textSize="14dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

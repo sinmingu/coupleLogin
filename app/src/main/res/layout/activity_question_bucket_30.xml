@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Question_self_100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E9E6F3"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/de_no_cancle"
+            android:layout_weight="0.1"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="버킷리스트 30"
+            android:layout_weight="0.8"
+            android:textColor="#C8A585"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae_bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="12dp"
+            android:id="@+id/de_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_weight="0.1"
+            android:id="@+id/back_page"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="페이지"
+                android:id="@+id/text_page"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:id="@+id/next_page"
+            android:layout_weight="0.1"
+            android:layout_height="40dp" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TabHost
+            android:id="@+id/reg_tab_host"
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+
+                android:id="@android:id/tabs"
+                android:visibility="gone"
+                android:layout_gravity="top"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" />
+
+            <FrameLayout
+
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view1"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/btn_question_circle"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 1 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_1"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 2 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_2"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 3 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_3"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 4 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_4"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 5 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_5"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 6 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_6"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 7 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_7"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 8 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_8"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 9 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_9"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 10 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_10"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view2"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/btn_question_circle"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 11 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_11"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 12 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_12"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 13 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_13"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 14 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_14"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 15 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_15"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 16 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_16"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 17 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_17"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 18 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_18"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 19 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_19"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 20 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_20"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/reg_tab_view3"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/btn_question_circle"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 21 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_21"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 22 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_22"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 23 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_23"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 24 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_24"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 25 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_25"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 26 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_26"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 27 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_27"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 28 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textColor="#757575"
+                                    
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_28"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 29 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:id="@+id/edit_bucket_29"
+                                    android:textColor="#757575"
+                                    
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text=" 30 "
+                                    android:textColor="#757575"
+                                    android:textStyle="bold"
+                                    
+                                    android:textSize="13dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:textSize="13dp"
+                                    android:textColor="#757575"
+                                    
+                                    android:id="@+id/edit_bucket_30"
+                                    android:background="@drawable/btn_write_circle"
+                                    android:layout_height="wrap_content" />
+
+
+                            </LinearLayout>
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+        </TabHost>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+           
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_circle"
+                android:fontFamily="@font/binggrae_bold"
+                android:gravity="center"
+                android:text="임시저장"
+                android:textColor="#ffffff"
+                android:id="@+id/btn_save"
+                android:textSize="12dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="전송하기"
+                android:layout_marginLeft="5dp"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:fontFamily="@font/binggrae_bold"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/btn_send"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

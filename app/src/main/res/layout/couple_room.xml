@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:weightSum="1"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+
+        android:paddingLeft="5dp"
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#878787"
+                android:textSize="15dp"
+                android:text="채팅방 : "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="참가자"
+
+                android:textSize="15dp"
+                android:textColor="#878787"
+                android:id="@+id/room_name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#878787"
+                android:textSize="15dp"
+
+                android:text="개설자 : "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="15dp"
+                android:textColor="#878787"
+                android:id="@+id/user_name"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.75"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/Delete_btn"
+            android:text="입장"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_pink_click"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
