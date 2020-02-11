@@ -22,6 +22,10 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,7 +44,7 @@ import java.util.Random;
 import static com.mglj.couplelogin.MainLogin.CoupleID;
 import static com.mglj.couplelogin.SerchActivity.LoginUserID;
 
-public class CoupleGameStart extends AppCompatActivity {
+public class CoupleGameStart extends AppCompatActivity implements RewardedVideoAdListener{
 
     TextView left_answer1, right_answer1, left_answer2, left_answer3, right_answer2, right_answer3, left_answer4, left_answer5, left_answer6, left_answer7,
             left_answer8, left_answer9, left_answer10, left_answer11, left_answer12, left_answer13, left_answer14, left_answer15, left_answer16, left_answer17,
@@ -73,6 +77,8 @@ public class CoupleGameStart extends AppCompatActivity {
 
     String arr_answer[] = new String[20];
 
+    private RewardedVideoAd mRewardedVideoAd;
+
     InterstitialAd adfull;
     ProgressBar h_progressbar;
     Random rnd = new Random();
@@ -100,7 +106,53 @@ public class CoupleGameStart extends AppCompatActivity {
         text_timer = (TextView)findViewById(R.id.text_timer);
         btn_regame = (TextView)findViewById(R.id.btn_regame);
 
+
+
         timer();
+
+        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+        mRewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
+            @Override
+            public void onRewardedVideoAdLoaded() {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdOpened() {
+            }
+
+            @Override
+            public void onRewardedVideoStarted() {
+            }
+
+            @Override
+            public void onRewardedVideoAdClosed() {
+
+            }
+
+            @Override
+            public void onRewarded(RewardItem rewardItem) {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdLeftApplication() {
+            }
+
+            @Override
+            public void onRewardedVideoAdFailedToLoad(int i) {
+
+            }
+
+            @Override
+            public void onRewardedVideoCompleted() {
+
+            }
+        });
+
+        loadRewardedVideoAd();
+
+
 
         Glide.with(this).load(R.drawable.cancel_2).fitCenter().into(de_no_cancle);
         Glide.with(this).load(R.drawable.cancel_2).fitCenter().into(de_no_can);
@@ -1646,9 +1698,17 @@ public class CoupleGameStart extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"문제를 끝까지 풀어주세요",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    if(adfull.isLoaded()){
-                        adfull.show();
-                    };
+
+                    if (mRewardedVideoAd.isLoaded()) {
+                        mRewardedVideoAd.show();
+                    }
+
+//                    mRewardedVideoAd.loadAd("ca-app-pub-5784293657699097/3686555184",
+//                            new AdRequest.Builder().build());
+
+//                    if(adfull.isLoaded()){
+//                        adfull.show();
+//                    };
 
                     new BackgroundTask_roomList().execute();
                 }
@@ -1943,6 +2003,46 @@ public class CoupleGameStart extends AppCompatActivity {
         }.start();
     }
 
+    @Override
+    public void onRewardedVideoAdLoaded() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdOpened() {
+
+    }
+
+    @Override
+    public void onRewardedVideoStarted() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdClosed() {
+
+    }
+
+    @Override
+    public void onRewarded(RewardItem rewardItem) {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdLeftApplication() {
+
+    }
+
+    @Override
+    public void onRewardedVideoAdFailedToLoad(int i) {
+
+    }
+
+    @Override
+    public void onRewardedVideoCompleted() {
+
+    }
+
     // 채팅방
     class BackgroundTask_roomList extends AsyncTask<Void, Void, String> {
 
@@ -2052,9 +2152,13 @@ public class CoupleGameStart extends AppCompatActivity {
                 gameAdd();
             }
 
-
         }
 
+    }
+
+    private void loadRewardedVideoAd() {
+
+        mRewardedVideoAd.loadAd("ca-app-pub-5784293657699097/3686555184", new AdRequest.Builder().build());
     }
 
 

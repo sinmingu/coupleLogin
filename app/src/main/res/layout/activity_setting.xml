@@ -187,13 +187,11 @@
                     android:layout_marginTop="10dp"
                     android:textSize="18dp"
                     android:id="@+id/password_re"
-                    android:inputType="textPassword"
                     android:gravity="right"
                     android:textColor="#F19DAE"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="0.8"
                     android:text="변경" />
-
 
             </LinearLayout>
 
@@ -204,6 +202,7 @@
                 android:layout_marginBottom="5dp"
                 android:hint="새 비밀번호를 입력하세요"
                 android:textSize="15dp"
+                android:inputType="textPassword"
                 android:id="@+id/edit_pass"
                 android:layout_height="wrap_content" />
 
@@ -217,13 +216,6 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
-
-
-
-
-
-
-
 
     </LinearLayout>
 

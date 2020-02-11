@@ -1,6 +1,8 @@
 package com.mglj.couplelogin;
 
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
@@ -141,21 +143,24 @@ public class MainLogin extends AppCompatActivity {
 
         new BackgroundTask_roomList().execute();
 
-
-
         handler = new Handler() {
 
             @Override
 
             public void handleMessage(Message msg) {
 
-                new BackgroundTask_userList().execute();
+                int status = NetworkStatus.getConnectivityStatus(getApplicationContext());
+                if(status == NetworkStatus.TYPE_MOBILE){
+                    new BackgroundTask_userList().execute();
+                }else if (status == NetworkStatus.TYPE_WIFI){
+                    new BackgroundTask_userList().execute();
+                }else {
+                    Toast.makeText(getApplicationContext(),"인터넷연결안됨",Toast.LENGTH_SHORT).show();
+                }
 
             }
 
         };
-
-
 
         Thread myThread = new Thread(new Runnable() {
 
@@ -168,7 +173,6 @@ public class MainLogin extends AppCompatActivity {
                         handler.sendMessage(handler.obtainMessage());
 
 
-
                     } catch (Throwable t) {
 
                     }
@@ -178,7 +182,6 @@ public class MainLogin extends AppCompatActivity {
             }
 
         });
-
 
 
         myThread.start();
