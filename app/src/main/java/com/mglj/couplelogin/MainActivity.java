@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(result);
                 JSONArray jsonArray = jsonObject.getJSONArray("response");
                 int count= 0;
-                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate;
+                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate, roomDay;
 
                 while(count < jsonArray.length()){
 
@@ -261,9 +261,9 @@ public class MainActivity extends AppCompatActivity {
                     room_makeID = object.getString("room_makeID");
                     room_intoID = object.getString("room_intoID");
                     roomDate = object.getString("roomDate");
+                    roomDay = object.getString("roomDay");
 
-
-                    Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate);
+                    Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate, roomDay);
                     roomArrayList.add(room);
 
 

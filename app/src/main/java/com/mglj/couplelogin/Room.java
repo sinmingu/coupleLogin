@@ -8,14 +8,16 @@ public class Room {
     String room_makeID;
     String room_intoID;
     String roomDate;
+    String roomDay;
 
-    public Room(String roomNum, String roomName, String roomPass, String room_makeID, String room_intoID, String roomDate) {
+    public Room(String roomNum, String roomName, String roomPass, String room_makeID, String room_intoID, String roomDate, String roomDay) {
         this.roomNum = roomNum;
         this.roomName = roomName;
         this.roomPass = roomPass;
         this.room_makeID = room_makeID;
         this.room_intoID = room_intoID;
         this.roomDate = roomDate;
+        this.roomDay = roomDay;
     }
 
     public void setRoomNum(String roomNum) {
@@ -42,6 +44,10 @@ public class Room {
         this.roomDate = roomDate;
     }
 
+    public void setRoomDay(String roomDay) {
+        this.roomDay = roomDay;
+    }
+
     public String getRoomNum() {
         return roomNum;
     }
@@ -64,5 +70,9 @@ public class Room {
 
     public String getRoomDate() {
         return roomDate;
+    }
+
+    public String getRoomDay() {
+        return roomDay;
     }
 }

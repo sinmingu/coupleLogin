@@ -168,7 +168,7 @@ public class SerchActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(result);
                 JSONArray jsonArray = jsonObject.getJSONArray("response");
                 int count= 0;
-                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate;
+                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate,roomDay;
 
                 while(count < jsonArray.length()){
 
@@ -179,9 +179,10 @@ public class SerchActivity extends AppCompatActivity {
                     room_makeID = object.getString("room_makeID");
                     room_intoID = object.getString("room_intoID");
                     roomDate = object.getString("roomDate");
+                    roomDay = object.getString("roomDay");
 
                     if(search_room.getText().toString().equals(roomName)) {
-                        Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate);
+                        Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate,roomDay);
                         roomArrayList.add(room);
                     }
 
@@ -254,7 +255,7 @@ public class SerchActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(result);
                 JSONArray jsonArray = jsonObject.getJSONArray("response");
                 int count= 0;
-                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate;
+                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate,roomDay;
 
                 while(count < jsonArray.length()){
 
@@ -265,9 +266,10 @@ public class SerchActivity extends AppCompatActivity {
                     room_makeID = object.getString("room_makeID");
                     room_intoID = object.getString("room_intoID");
                     roomDate = object.getString("roomDate");
+                    roomDay = object.getString("roomDay");
 
                     if(LoginUserID.equals(room_makeID)||LoginUserID.equals(room_intoID)) {
-                        Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate);
+                        Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate,roomDay);
                         roomArrayList.add(room);
                     }
 
@@ -349,7 +351,7 @@ public class SerchActivity extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(result);
                 JSONArray jsonArray = jsonObject.getJSONArray("response");
                 int count= 0;
-                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate;
+                String roomNum, roomName, roomPass, room_makeID,room_intoID,roomDate,roomDay;
 
                 while(count < jsonArray.length()){
 
@@ -360,9 +362,10 @@ public class SerchActivity extends AppCompatActivity {
                     room_makeID = object.getString("room_makeID");
                     room_intoID = object.getString("room_intoID");
                     roomDate = object.getString("roomDate");
+                    roomDay = object.getString("roomDay");
 
                     if(LoginUserID.equals(room_makeID)||LoginUserID.equals(room_intoID)) {
-                        Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate);
+                        Room room = new Room(roomNum, roomName, roomPass, room_makeID, room_intoID, roomDate,roomDay);
                         roomArrayList.add(room);
                     }
 
