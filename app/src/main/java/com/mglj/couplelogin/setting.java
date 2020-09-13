@@ -37,6 +37,7 @@ public class setting extends AppCompatActivity {
     TextView userId, userNick, userNick_change, password_re;
     List<User> userList;
     EditText edit_userNick, edit_pass, edit_pass_re;
+    TextView delete_user_btn;
 
 
     @Override
@@ -102,8 +103,19 @@ public class setting extends AppCompatActivity {
 
         new BackgroundTask_userList().execute();
 
-    }
+        //회원탈퇴
+        delete_user_btn = (TextView)findViewById(R.id.delete_user_btn);
 
+        delete_user_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+            }
+        });
+
+    }
     // 채팅방
     class BackgroundTask_userList extends AsyncTask<Void, Void, String> {
 
@@ -165,14 +177,10 @@ public class setting extends AppCompatActivity {
                     userRoom = object.getString("userRoom");
 
                     if (userID.equals(LoginUserID)) {
-
                         User user = new User(userID, userPassword, userName, userSex, userRoom);
                         userList.add(user);
                     }
-
-
                     count++;
-
                 }
 
             } catch (Exception e) {
@@ -289,8 +297,7 @@ public class setting extends AppCompatActivity {
         queue.add(registerRequest);
 
         // --------------------유저 DB 등록 끝--------------------
-
-
+        
     }
 
 }

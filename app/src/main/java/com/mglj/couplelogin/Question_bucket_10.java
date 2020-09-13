@@ -99,15 +99,9 @@ public class Question_bucket_10 extends AppCompatActivity {
         reg_tabSpec1.setContent(R.id.reg_tab_view1); // Tab Content
         reg_tabHost.addTab(reg_tabSpec1);
 
-
-
         reg_tabHost.getTabWidget().getChildAt(0)
 
                 .setBackgroundColor(Color.parseColor("#ffffff"));
-
-
-
-
 
         reg_tabHost.setCurrentTab(0); // 처음 열리는 탭
 
@@ -125,7 +119,6 @@ public class Question_bucket_10 extends AppCompatActivity {
                     page-=1;
                     reg_tabHost.setCurrentTab(page);
                     text_page.setText(page+1 +" / 1");
-
                 }
             }
         });
@@ -471,10 +464,7 @@ public class Question_bucket_10 extends AppCompatActivity {
                                 bucket10Answer7, bucket10Answer8, bucket10Answer9, bucket10Answer10);
                         bucket10List.add(bucket10);
                     }
-
-
                     count++;
-
                 }
 
             }catch(Exception e){
@@ -482,15 +472,12 @@ public class Question_bucket_10 extends AppCompatActivity {
                 e.getStackTrace();
 
             }
-
             if(bucket10List.size()>=1){
                 bucket10_update();
             }
             else if(bucket10List.size()==0){
                 bucket10();
             }
-
-
         }
 
     }
@@ -561,9 +548,6 @@ public class Question_bucket_10 extends AppCompatActivity {
         }
         else
             answer10=edit_bucket_10.getText().toString();
-
-
-
 
         // 특정요청후 리스너에서 원하는 결과값을 다룰 수 있게 함
         Response.Listener<String> responseListener = new Response.Listener<String>() {

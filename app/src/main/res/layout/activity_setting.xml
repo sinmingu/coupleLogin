@@ -41,16 +41,12 @@
             android:layout_weight="0.1"
             android:layout_height="wrap_content" />
 
-
-
     </LinearLayout>
-
 
     <TextView
         android:layout_width="match_parent"
         android:background="#EAEAEA"
         android:layout_height="1dp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -162,11 +158,6 @@
                 android:background="#D8D8D8"
                 android:layout_height="1dp" />
 
-
-
-
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
@@ -186,9 +177,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:textSize="18dp"
+                    android:textColor="#F19DAE"
                     android:id="@+id/password_re"
                     android:gravity="right"
-                    android:textColor="#F19DAE"
+
                     android:layout_marginBottom="10dp"
                     android:layout_weight="0.8"
                     android:text="변경" />
@@ -215,7 +207,28 @@
                 android:id="@+id/edit_pass_re"
                 android:layout_height="wrap_content" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="회원탈퇴"
+                    android:textSize="18dp"
+                    android:id="@+id/delete_user_btn"
+                    android:textColor="#F19DAE"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
         </LinearLayout>
+
+
 
     </LinearLayout>
 
