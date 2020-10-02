@@ -3,9 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mglj.couplelogin">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/mainlogo"
@@ -13,12 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".setting"></activity>
-
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5784293657699097~5852338508" />
-
+        <activity android:name=".RandomGame_Scrach"></activity>
+        <activity android:name=".RandomGame" />
+        <activity android:name=".setting" />
         <activity android:name=".self100_info" />
         <activity android:name=".you100_send_info" />
         <activity android:name=".you100_info" />
@@ -42,7 +36,7 @@
         <activity android:name=".Question_self" />
         <activity android:name=".detail_room" />
         <activity android:name=".SerchActivity" />
-        <activity android:name=".MainLogin"></activity>
+        <activity android:name=".MainLogin" />
         <activity android:name=".Register" />
         <activity android:name=".Splashscreen">
             <intent-filter>
@@ -58,6 +52,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5784293657699097~5852338508" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

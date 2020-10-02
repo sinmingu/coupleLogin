@@ -53,7 +53,7 @@ public class MainLogin extends AppCompatActivity {
     String roomNum2;
     private List<Room> roomArrayList;
     TextView text_Login, getFile, text_Couple, text_couple_id;
-    Button question_send, question_file, question_list, couple_tele;
+    Button question_send, question_file, question_list, couple_tele, couple_random;
     public static String CoupleID="";
     ImageView main_img2, center_img;
     AdView adBanner;
@@ -90,6 +90,7 @@ public class MainLogin extends AppCompatActivity {
         question_file = (Button)findViewById(R.id.question_file);
         question_list = (Button)findViewById(R.id.question_list);
         couple_tele = (Button)findViewById(R.id.couple_tele);
+        couple_random = (Button)findViewById(R.id.couple_random);
         main_img2 = (ImageView)findViewById(R.id.main_img2);
         text_couple_id = (TextView)findViewById(R.id.text_couple_id);
 
@@ -102,7 +103,7 @@ public class MainLogin extends AppCompatActivity {
 
         Glide.with(this).load(R.drawable.heart).fitCenter().into(center_img);
 
-        //받은 내용 확인하기
+        // 받은 내용 확인하기
         getFile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,7 +114,7 @@ public class MainLogin extends AppCompatActivity {
             }
         });
 
-        //문답 보내기
+        // 문답 보내기
         question_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -124,7 +125,7 @@ public class MainLogin extends AppCompatActivity {
             }
         });
 
-        //자가 문답
+        // 자가 문답
         question_file.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -135,7 +136,7 @@ public class MainLogin extends AppCompatActivity {
             }
         });
 
-        //버킷리스트
+        // 버킷리스트
         question_list.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -146,12 +147,23 @@ public class MainLogin extends AppCompatActivity {
             }
         });
 
-        //이구동성
+        // 이구동성
         couple_tele.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent1 = new Intent(getApplicationContext(),CoupleGame.class);
+                startActivity(intent1);
+
+            }
+        });
+
+        // 랜덤게임
+        couple_random.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent1 = new Intent(getApplicationContext(), RandomGame.class);
                 startActivity(intent1);
 
             }
@@ -183,7 +195,7 @@ public class MainLogin extends AppCompatActivity {
 
         };
 
-        new BackgroundTask_roomList_Day().execute();
+        new BackgroundTask_roomList_D_Day().execute();
 
         Thread myThread = new Thread(new Runnable() {
 
@@ -306,13 +318,8 @@ public class MainLogin extends AppCompatActivity {
                     JSONObject jsonResponse = new JSONObject(response);  // 결과를 담을 수 있게 함
                     boolean success = jsonResponse.getBoolean("success");
                     if(success){
-//                        // 커스텀 다이얼로그를 생성한다. 사용자가 만든 클래스이다.
-//                        CustomDialogSucces customDialog = new CustomDialogSucces(MainLogin.this);
-//
-//                        // 커스텀 다이얼로그를 호출한다.
-//                        // 커스텀 다이얼로그의 결과를 출력할 TextView를 매개변수로 같이 넘겨준다.
-//                        customDialog.callFunction();
-                        new BackgroundTask_roomList_Day().execute();
+
+                        new BackgroundTask_roomList_D_Day().execute();
 
                     }
                     else{
@@ -339,8 +346,7 @@ public class MainLogin extends AppCompatActivity {
 
     }
 
-
-    // 그래프 보기 시작(펫)
+    // 커플방 정보 가져오기
     class BackgroundTask_roomList extends AsyncTask<Void, Void, String> {
 
         String target;
@@ -438,8 +444,8 @@ public class MainLogin extends AppCompatActivity {
     }
 
 
-    // 그래프 보기 시작(펫)
-    class BackgroundTask_roomList_Day extends AsyncTask<Void, Void, String> {
+    // D-day불러오기
+    class BackgroundTask_roomList_D_Day extends AsyncTask<Void, Void, String> {
 
         String target;
 
@@ -532,11 +538,8 @@ public class MainLogin extends AppCompatActivity {
 
                         long diffDay = diff / (24*60*60*1000);
 
-                        text_day.setText("Day : "+diffDay+"일");
+                        text_day.setText("Day "+diffDay+"일");
                     }
-
-
-
 
                 }catch(ParseException e){
                     e.printStackTrace();
@@ -547,7 +550,6 @@ public class MainLogin extends AppCompatActivity {
         }
 
     }
-
 
     // 채팅방
     class BackgroundTask_userList extends AsyncTask<Void, Void, String> {
@@ -641,22 +643,8 @@ public class MainLogin extends AppCompatActivity {
                 getFile.setText(userList.get(0).getUserName());
             }
 
-
-
-
         }
 
-    }
-
-    private void adMob(){
-        MobileAds.initialize(this, getString(R.string.ad_unit_id));
-        AdView mAdView = findViewById(R.id.adView);
-        Bundle extras = new Bundle();
-        extras.putString("max_ad_content_rating", "G"); // 앱이 3세 이상 사용가능이라면 광고레벨을 설정해줘야 한다
-        AdRequest adRequest = new AdRequest.Builder()
-                .addNetworkExtrasBundle(AdMobAdapter.class, extras)
-                .build();
-        mAdView.loadAd(adRequest);
     }
 
 }

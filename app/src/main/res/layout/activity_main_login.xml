@@ -234,6 +234,18 @@
                 android:stateListAnimator="@null"
                 android:textColor="#ffffff" />
 
+            <Button
+                android:id="@+id/couple_random"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_pink_click"
+                android:fontFamily="@font/binggrae_bold"
+                android:text="랜덤게임"
+                android:stateListAnimator="@null"
+                android:textColor="#ffffff" />
+
+
         </LinearLayout>
 
 
