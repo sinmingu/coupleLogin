@@ -67,7 +67,7 @@ class ScratchView extends View{
         Bitmap temp = BitmapFactory.decodeResource(getResources(), R.drawable.lotto_off, opts);
         currentBitmap = Bitmap.createScaledBitmap(temp, w, h, true);
 
-        temp = BitmapFactory.decodeResource(getResources(), rand, opts);
+        temp = BitmapFactory.decodeResource(getResources(), LottoImage[rand], opts);
         newBitmap = Bitmap.createScaledBitmap(temp, w, h, true);
 
         Paint p = new Paint();

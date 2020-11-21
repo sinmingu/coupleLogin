@@ -116,11 +116,12 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
                         android:id="@+id/scrach_layout"
-                        android:orientation="vertical"
-                        android:layout_height="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/lotto_off"
+                        android:orientation="vertical">
 
 
                     </LinearLayout>

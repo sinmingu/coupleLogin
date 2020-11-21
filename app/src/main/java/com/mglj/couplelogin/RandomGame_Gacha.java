@@ -32,6 +32,7 @@ public class RandomGame_Gacha extends AppCompatActivity {
         Glide.with(this).load(R.drawable.cancel_2).fitCenter().into(de_no_cancle);
         Glide.with(this).load(R.drawable.cancel_2).fitCenter().into(de_no_can);
 
+        // 뒤로가기
         de_no_can.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,7 +47,7 @@ public class RandomGame_Gacha extends AppCompatActivity {
         list.add(new DataPage(R.drawable.beef,"data3"));
         viewPager2.setAdapter(new MyViewPagerAdapter(list));
         viewPager2.setCurrentItem(0); //화면에 보여질 페이지 설정
-        viewPager2.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL); // (페이지 넘어갈떄 가로,세로방향 설정)
+        viewPager2.setOrientation(ViewPager2.ORIENTATION_VERTICAL); // (페이지 넘어갈떄 가로,세로방향 설정)
 
         handler = new Handler() {
 

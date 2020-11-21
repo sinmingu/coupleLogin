@@ -42,14 +42,16 @@ public class RandomGame extends AppCompatActivity {
         slot_Game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplication(), RandomGame_Gacha.class);
+                startActivity(intent);
             }
         });
         // 룰렛게임
         rulet_Game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplication(), RandomGame_Rulet.class);
+                startActivity(intent);
             }
         });
         // 즉석복권
