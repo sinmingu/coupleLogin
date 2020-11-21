@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RandomGame_Scrach"></activity>
+        <activity android:name=".RandomGame_Gacha"></activity>
+        <activity android:name=".RandomGame_Rulet" />
+        <activity android:name=".RandomGame_Scrach" />
         <activity android:name=".RandomGame" />
         <activity android:name=".setting" />
         <activity android:name=".self100_info" />

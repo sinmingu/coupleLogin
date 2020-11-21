@@ -12,6 +12,8 @@ import android.graphics.Paint.Style;
 import android.view.MotionEvent;
 import android.view.View;
 
+import java.util.Random;
+
 class ScratchView extends View{
     private int radius=60;
     private int pixelArray[];
@@ -21,6 +23,15 @@ class ScratchView extends View{
     private Bitmap newBitmap;
     private Bitmap maskBitmap;
     private Paint  currentBitmapPaint;
+
+    int LottoImage[] ={R.drawable.tto1,R.drawable.tto2,R.drawable.tto3,R.drawable.tto4,R.drawable.tto5,R.drawable.tto6,R.drawable.tto7,R.drawable.tto8,R.drawable.tto9,R.drawable.tto10,
+            R.drawable.tto11,R.drawable.tto12,R.drawable.tto13,R.drawable.tto14,R.drawable.tto15,R.drawable.tto16,R.drawable.tto17,R.drawable.tto18,R.drawable.tto19,R.drawable.tto20,
+            R.drawable.tto21,R.drawable.tto22,R.drawable.tto23,R.drawable.tto24,R.drawable.tto25,R.drawable.tto26,R.drawable.tto27,R.drawable.tto28,R.drawable.tto29,R.drawable.tto30,
+            R.drawable.tto31,R.drawable.tto32,R.drawable.tto33,R.drawable.tto34,R.drawable.tto35,R.drawable.tto36,R.drawable.tto37,R.drawable.tto38,R.drawable.tto39,R.drawable.tto40,
+            R.drawable.tto41,R.drawable.tto42,R.drawable.tto43,R.drawable.tto44,R.drawable.tto45,R.drawable.tto46,R.drawable.tto47,R.drawable.tto48,R.drawable.tto49,R.drawable.tto50,
+            R.drawable.tto51,R.drawable.tto52,R.drawable.tto53,R.drawable.tto54,R.drawable.tto55,R.drawable.tto56,R.drawable.tto57,R.drawable.tto58,R.drawable.tto59,R.drawable.tto60,
+            R.drawable.tto61,R.drawable.tto62,R.drawable.tto63,R.drawable.tto64,R.drawable.tto65,R.drawable.tto66,R.drawable.tto67,R.drawable.tto68,R.drawable.tto69,R.drawable.tto70,
+            R.drawable.tto71,R.drawable.tto72,R.drawable.tto73,R.drawable.tto74,R.drawable.tto75,R.drawable.tto76,R.drawable.tto77,R.drawable.tto78,R.drawable.tto79,R.drawable.tto80};
 
     private boolean isFirst;
 
@@ -49,12 +60,14 @@ class ScratchView extends View{
         Options opts = new Options();
         opts.inPurgeable = true;
 
+        //랜덤함수 생성
+        Random random = new Random();
+        int rand = random.nextInt(80)+1;
 
         Bitmap temp = BitmapFactory.decodeResource(getResources(), R.drawable.lotto_off, opts);
         currentBitmap = Bitmap.createScaledBitmap(temp, w, h, true);
 
-
-        temp = BitmapFactory.decodeResource(getResources(), R.drawable.lotto_on, opts);
+        temp = BitmapFactory.decodeResource(getResources(), rand, opts);
         newBitmap = Bitmap.createScaledBitmap(temp, w, h, true);
 
         Paint p = new Paint();

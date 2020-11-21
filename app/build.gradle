@@ -42,4 +42,7 @@ dependencies {
     //애드몹
     implementation 'com.google.android.gms:play-services-ads:18.3.0'
 
+    //뷰페이저2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+
 }

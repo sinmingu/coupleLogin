@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RandomGame_Gacha">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E9E6F3"
+        android:gravity="center"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/de_no_cancle"
+            android:visibility="invisible"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="슬롯게임"
+            android:layout_weight="0.8"
+            android:textColor="#C8A585"
+            android:textStyle="bold"
+            android:fontFamily="@font/binggrae_bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:textColor="#3995d3"
+            android:textSize="12dp"
+            android:id="@+id/de_no_can"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EAEAEA"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.55"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="커플슬롯머신"
+                android:fontFamily="@font/binggrae_bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/pink_text"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="오늘은 뭐 먹지? 음식을 선택하기 힘든\n커플들을 위한 랜덤게임"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.45"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/slot"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.4"
+                            android:layout_height="match_parent"/>
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/pager"
+                            android:layout_weight="0.2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.4"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="0.35"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent">
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/btn_question_circle"
+                    android:gravity="center"
+                    android:id="@+id/slot_text"
+                    android:fontFamily="@font/binggrae_bold"
+                    android:layout_height="match_parent"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.4"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="새게임"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:fontFamily="@font/binggrae_bold"
+                    android:background="@drawable/btn_circle"
+                    android:id="@+id/btn_regame"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_circle"
+                    android:fontFamily="@font/test3"
+                    android:gravity="center"
+                    android:text="임시저장"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btn_save"
+                    android:textSize="13dp" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="새게임"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:fontFamily="@font/binggrae_bold"
+                    android:background="@drawable/btn_circle"
+                    android:id="@+id/btnNewGame"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
