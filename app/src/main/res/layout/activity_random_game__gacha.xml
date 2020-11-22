@@ -135,7 +135,37 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_weight="0.35"
+                        android:orientation="horizontal"
                         android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.5"
+                            android:layout_height="match_parent"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_gravity="right"
+                                android:id="@+id/btn_rabber"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+
+
 
                     </LinearLayout>
 
